@@ -6,5 +6,7 @@
     <color name="background">#FCFCFF</color>
     <color name="series_7">#FFC8B7</color>
     <color name="series_4">#FFEFE1</color>
+    <color name="mi_watch">#F0DEC5</color>
     <color name="subtitle">#9095A6</color>
+    <color name="amazfit">#FCF1F0</color>
 </resources>

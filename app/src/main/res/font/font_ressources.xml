@@ -16,4 +16,10 @@
         android:fontWeight="500"
         android:font="@font/raleway_medium"
         />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/poppins_medium"
+        />
 </font-family>
