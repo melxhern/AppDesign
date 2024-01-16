@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">AppDesign1</string>
+    <string name="app_name">AppDesign</string>
+    <string name="suitable_watch">Find your suitable watch now.</string>
+    <string name="smart_watch">Smart watch</string>
 </resources>
