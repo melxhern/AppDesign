@@ -2,4 +2,16 @@
     <string name="app_name">AppDesign</string>
     <string name="suitable_watch">Find your suitable watch now.</string>
     <string name="smart_watch">Smart watch</string>
+    <string name="apple_watch">Apple Watch</string>
+    <string name="galaxy_watch">Galaxy Watch</string>
+    <string name="mi_watch">Mi Watch</string>
+    <string name="amazfit_watch">Amazfit Bip U</string>
+    <string name="series_7">Series 7</string>
+    <string name="series_4">Series 4</string>
+    <string name="all_series">All Series</string>
+    <string name="pro_series">Pro Series</string>
+    <string name="price_apple">$799</string>
+    <string name="price_galaxy">$599</string>
+    <string name="price_mi">$299</string>
+    <string name="price_amazon">$199</string>
 </resources>

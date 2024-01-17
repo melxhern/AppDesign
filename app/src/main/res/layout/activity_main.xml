@@ -7,86 +7,72 @@
     tools:context=".MainActivity"
     android:background="@color/background">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/raleway_bold"
-        android:text="@string/suitable_watch"
-        android:textColor="@color/black"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="96dp"
-        app:layout_constraintHorizontal_bias=".2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="60dp"
-        app:layout_constraintVertical_bias="0.085"
-        app:layout_constraintWidth="303dp" />
-
-    <TextView
-        android:id="@+id/smartwatch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/raleway_semibold"
-        android:text="@string/smart_watch"
-        android:textColor="@color/purple"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHeight="24dp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="@id/title"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221"
-        app:layout_constraintWidth="100dp" />
-
     <LinearLayout
         android:id="@+id/vertical_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/smartwatch">
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/Raleway_Bold"
+            android:text="@string/suitable_watch"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp" />
+
+        <TextView
+            android:id="@+id/smartwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/Raleway_SemiBold"
+            android:text="@string/smart_watch"
+            android:textColor="@color/purple"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:layout_marginTop="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="157dp"
-                android:layout_height="250dp"
-                android:layout_weight="1"
+                android:layout_height="240dp"
                 android:layout_marginStart="20dp"
-                android:elevation="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/arrondi_background"
+                android:elevation="10dp"
                 android:orientation="vertical">
 
                 <!-- Vertical Layout 1 -->
                 <ImageView
-                    android:layout_marginTop="20dp"
                     android:layout_width="141dp"
                     android:layout_height="101dp"
                     android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/arrondi_1"
-                    android:src="@drawable/series_7_small" />
+                    android:src="@drawable/series_7_small"
+                    android:contentDescription="@string/apple_watch" />
 
                 <TextView
-                    android:layout_width="96dp"
-                    android:layout_height="19dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/raleway_semibold"
-                    android:gravity="left"
-                    android:text="Title 1"
-                    android:textSize="16dp" />
+                    android:fontFamily="@font/Raleway_SemiBold"
+                    android:text="@string/apple_watch"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -94,52 +80,50 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/raleway_medium"
-                    android:gravity="left"
-                    android:text="Subtitle 1"
+                    android:text="@string/series_7"
                     android:textColor="@color/subtitle"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:layout_marginTop="30dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:textColor="@color/purple"
-                    android:text="Price 1" />
+                    android:text="@string/price_apple"
+                    android:textColor="@color/purple" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="157dp"
-                android:layout_height="250dp"
+                android:layout_height="240dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                android:elevation="10dp"
                 android:background="@drawable/arrondi_background"
+                android:elevation="10dp"
                 android:orientation="vertical">
 
                 <!-- Vertical Layout 2 -->
                 <ImageView
-                    android:layout_marginTop="20dp"
                     android:id="@+id/watch_2"
                     android:layout_width="141dp"
                     android:layout_height="101dp"
                     android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/arrondi_2"
-                    android:src="@drawable/series_4" />
+                    android:src="@drawable/series_4"
+                    android:contentDescription="@string/galaxy_watch" />
 
                 <TextView
-                    android:layout_width="96dp"
-                    android:layout_height="19dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/raleway_semibold"
-                    android:gravity="left"
-                    android:text="Title 2"
-                    android:textSize="16dp" />
+                    android:fontFamily="@font/Raleway_SemiBold"
+                    android:text="@string/galaxy_watch"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -147,57 +131,57 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/raleway_medium"
-                    android:gravity="left"
-                    android:text="Subtitle 2"
+                    android:text="@string/series_4"
                     android:textColor="@color/subtitle"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:textColor="@color/purple"
-                    android:layout_marginTop="30dp"
-                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="20dp"
-                    android:text="Price 2" />
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/price_galaxy"
+                    android:textColor="@color/purple" />
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <LinearLayout
                 android:layout_width="157dp"
-                android:layout_height="250dp"
-                android:layout_weight="1"
-                android:elevation="10dp"
+                android:layout_height="240dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
                 android:background="@drawable/arrondi_background"
+                android:elevation="10dp"
                 android:orientation="vertical">
 
                 <!-- Vertical Layout 3 -->
                 <ImageView
-                    android:layout_marginTop="20dp"
                     android:layout_width="141dp"
                     android:layout_height="101dp"
                     android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/arrondi_3"
-                    android:src="@drawable/all_series" />
+                    android:src="@drawable/all_series"
+                    android:contentDescription="@string/mi_watch" />
 
                 <TextView
-                    android:layout_width="96dp"
-                    android:layout_height="19dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/raleway_semibold"
-                    android:gravity="left"
-                    android:text="Title 1"
-                    android:textSize="16dp" />
+                    android:fontFamily="@font/Raleway_SemiBold"
+                    android:text="@string/mi_watch"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -205,52 +189,49 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/raleway_medium"
-                    android:gravity="left"
-                    android:text="Subtitle 1"
+                    android:text="@string/all_series"
                     android:textColor="@color/subtitle"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:textColor="@color/purple"
-                    android:layout_marginTop="30dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Price 1" />
+                    android:text="@string/price_mi"
+                    android:textColor="@color/purple" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="157dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="20dp"
-                android:layout_weight="1"
-                android:elevation="10dp"
+                android:layout_height="240dp"
                 android:layout_marginEnd="20dp"
+                android:layout_weight="1"
                 android:background="@drawable/arrondi_background"
+                android:elevation="10dp"
                 android:orientation="vertical">
 
                 <!-- Vertical Layout 4 -->
                 <ImageView
-                    android:layout_marginTop="20dp"
                     android:id="@+id/watch_4"
                     android:layout_width="141dp"
                     android:layout_height="101dp"
                     android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/arrondi_4"
-                    android:src="@drawable/bip_u_pro_series" />
+                    android:src="@drawable/bip_u_pro_series"
+                    android:contentDescription="@string/amazfit_watch" />
 
                 <TextView
-                    android:layout_width="96dp"
-                    android:layout_height="19dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/raleway_semibold"
-                    android:gravity="left"
-                    android:text="Title 2"
-                    android:textSize="16dp" />
+                    android:fontFamily="@font/Raleway_SemiBold"
+                    android:text="@string/amazfit_watch"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -258,20 +239,18 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/raleway_medium"
-                    android:gravity="left"
-                    android:text="Subtitle 2"
+                    android:text="@string/pro_series"
                     android:textColor="@color/subtitle"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:textColor="@color/purple"
-                    android:layout_marginTop="30dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Price 2" />
+                    android:text="@string/price_amazon"
+                    android:textColor="@color/purple" />
             </LinearLayout>
 
         </LinearLayout>
