@@ -14,4 +14,7 @@
     <string name="price_galaxy">$599</string>
     <string name="price_mi">$299</string>
     <string name="price_amazon">$199</string>
+    <string name="back_arrow">Retour à la page précédente</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="apple_watch_series_7_image">Apple watch series 7 image</string>
 </resources>
