@@ -17,4 +17,15 @@
     <string name="back_arrow">Retour à la page précédente</string>
     <string name="add_to_cart">Add to cart</string>
     <string name="apple_watch_series_7_image">Apple watch series 7 image</string>
+    <string name="title_activity_watch_page">WatchPage</string>
+    <string name="title_watch_1">Apple Watch Series 7</string>
+    <string name="title_watch_2">Galaxy Watch Series 4</string>
+    <string name="title_watch_3">Mi Watch All Series</string>
+    <string name="title_watch_4">Amazfit Bip U Pro Series</string>
+    <string name="desc_1">The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy.
+The Sport Band is made from a durable yet surprisingly soft high-performance fluoroelastomer with an innovative pin-and-tuck closure.</string>
+    <string name="desc_2">The Samsung Galaxy Watch4 connected watch, powered by Android Wear 3.0, offers you ideal access to the Google universe while offering a 1.2" Super Amoled screen, a large storage capacity and precise monitoring of your sports activities, your health and your sleep.</string>
+    <string name="desc_3">1.39 inch 326 ppi high resolution display - Keep an eye on your health
+The always-on display function allows you to see the time, even in direct sunlight. Clearly displays incoming calls, notifications, fitness and other important information.</string>
+    <string name="desc_4">The Amazfit Bip U is a connected watch designed for sport and to monitor its performance thanks to its integrated GPS and its 60 sports modes. This training partner has many features ideal for your sports and daily activities.</string>
 </resources>

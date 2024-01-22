@@ -21,38 +21,41 @@
             android:id="@+id/title"
             android:layout_width="340dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/Raleway_Bold"
+            android:fontFamily="@font/raleway_bold"
             android:text="@string/suitable_watch"
             android:textColor="@color/black"
             android:textSize="36sp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="150dp" />
+            android:layout_marginTop="120dp" />
 
         <TextView
             android:id="@+id/smartwatch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/Raleway_SemiBold"
+            android:fontFamily="@font/raleway_semibold"
             android:text="@string/smart_watch"
             android:textColor="@color/purple"
             android:textSize="16sp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="35dp" />
+            android:layout_marginTop="25dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/watch_1"
                 android:layout_width="157dp"
                 android:layout_height="240dp"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/arrondi_background"
                 android:elevation="10dp"
+                android:clickable="true"
+                android:onClick="onWatchClicked"
                 android:orientation="vertical">
 
                 <!-- Vertical Layout 1 -->
@@ -70,7 +73,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/Raleway_SemiBold"
+                    android:textColor="@color/watch_title"
+                    android:fontFamily="@font/raleway_semibold"
                     android:text="@string/apple_watch"
                     android:textSize="16sp" />
 
@@ -96,6 +100,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/watch_2"
                 android:layout_width="157dp"
                 android:layout_height="240dp"
                 android:layout_marginStart="20dp"
@@ -103,11 +108,12 @@
                 android:layout_weight="1"
                 android:background="@drawable/arrondi_background"
                 android:elevation="10dp"
+                android:clickable="true"
+                android:onClick="onWatchClicked"
                 android:orientation="vertical">
 
                 <!-- Vertical Layout 2 -->
                 <ImageView
-                    android:id="@+id/watch_2"
                     android:layout_width="141dp"
                     android:layout_height="101dp"
                     android:layout_gravity="center"
@@ -121,7 +127,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/Raleway_SemiBold"
+                    android:textColor="@color/watch_title"
+                    android:fontFamily="@font/raleway_semibold"
                     android:text="@string/galaxy_watch"
                     android:textSize="16sp" />
 
@@ -155,6 +162,7 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <LinearLayout
+                android:id="@+id/watch_3"
                 android:layout_width="157dp"
                 android:layout_height="240dp"
                 android:layout_marginStart="20dp"
@@ -162,6 +170,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/arrondi_background"
                 android:elevation="10dp"
+                android:clickable="true"
+                android:onClick="onWatchClicked"
                 android:orientation="vertical">
 
                 <!-- Vertical Layout 3 -->
@@ -179,8 +189,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/Raleway_SemiBold"
+                    android:fontFamily="@font/raleway_semibold"
                     android:text="@string/mi_watch"
+                    android:textColor="@color/watch_title"
                     android:textSize="16sp" />
 
                 <TextView
@@ -205,17 +216,19 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/watch_4"
                 android:layout_width="157dp"
                 android:layout_height="240dp"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/arrondi_background"
                 android:elevation="10dp"
+                android:clickable="true"
+                android:onClick="onWatchClicked"
                 android:orientation="vertical">
 
                 <!-- Vertical Layout 4 -->
                 <ImageView
-                    android:id="@+id/watch_4"
                     android:layout_width="141dp"
                     android:layout_height="101dp"
                     android:layout_gravity="center"
@@ -229,8 +242,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/Raleway_SemiBold"
+                    android:fontFamily="@font/raleway_semibold"
                     android:text="@string/amazfit_watch"
+                    android:textColor="@color/watch_title"
                     android:textSize="16sp" />
 
                 <TextView

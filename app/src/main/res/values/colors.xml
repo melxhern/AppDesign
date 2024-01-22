@@ -9,4 +9,6 @@
     <color name="mi_watch">#F0DEC5</color>
     <color name="subtitle">#9095A6</color>
     <color name="amazfit">#FCF1F0</color>
+    <color name="watch_title">#1B153D</color>
+
 </resources>

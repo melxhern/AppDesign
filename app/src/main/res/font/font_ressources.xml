@@ -3,12 +3,12 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:font="@font/Raleway_Bold" />
+        android:font="@font/raleway_bold" />
 
     <font
         android:fontStyle="normal"
         android:fontWeight="600"
-        android:font="@font/Raleway_SemiBold"
+        android:font="@font/raleway_semibold"
         />
 
     <font
