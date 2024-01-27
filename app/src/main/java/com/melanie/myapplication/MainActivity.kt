@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
     fun onWatchClicked(view: View) {
         val intent = Intent(this, WatchPage::class.java)
 
-        // Obtenez l'ID du titre cliqué
+        // Id of the watch chosen
         val clickedWatchId = view.id
 
-        // Ajoutez l'ID en tant qu'information supplémentaire à l'intention
+        // Put the id as extra info to the intent
         intent.putExtra("watch_id", clickedWatchId)
 
         startActivity(intent)

@@ -11,29 +11,30 @@ class WatchPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.watch_page)
 
-        // Récupérez l'ID du titre à partir de l'intention
+        // Take the id from the info in the intent
         val clickedWatchId = intent.getIntExtra("watch_id", 0)
 
-        // Utilisez l'ID du titre pour mapper les détails correspondants
+        // Modify the page depending on the id received
         when (clickedWatchId) {
             R.id.watch_1 -> {
-                // Modifiez les détails dans votre mise en page en fonction de l'ID du titre
+                // Change the image
                 val watchImageView = findViewById<ImageView>(R.id.imageView)
                 watchImageView.setImageResource(R.drawable.series_7_zoom)
 
+                // Change the title
                 val watchTitleTextView = findViewById<TextView>(R.id.title)
                 watchTitleTextView.text = getString(R.string.title_watch_1)
 
+                // Change the price
                 val watchPriceTextView = findViewById<TextView>(R.id.price_view)
                 watchPriceTextView.text = getString(R.string.price_apple)
 
+                // Change the description
                 val watchDescriptionTextView = findViewById<TextView>(R.id.description_text)
                 watchDescriptionTextView.text = getString(R.string.desc_1)
 
-                // Ajoutez d'autres modifications en fonction de l'ID du titre
             }
             R.id.watch_2 -> {
-                // Modifiez les détails dans votre mise en page en fonction de l'ID du titre
                 val watchImageView = findViewById<ImageView>(R.id.imageView)
                 watchImageView.setImageResource(R.drawable.series_4_zoom)
 
@@ -45,10 +46,8 @@ class WatchPage : AppCompatActivity() {
 
                 val watchDescriptionTextView = findViewById<TextView>(R.id.description_text)
                 watchDescriptionTextView.text = getString(R.string.desc_2)
-                // Ajoutez d'autres modifications en fonction de l'ID du titre
             }
             R.id.watch_3 -> {
-                // Modifiez les détails dans votre mise en page en fonction de l'ID du titre
                 val watchImageView = findViewById<ImageView>(R.id.imageView)
                 watchImageView.setImageResource(R.drawable.mi_watch_zoom)
 
@@ -60,10 +59,8 @@ class WatchPage : AppCompatActivity() {
 
                 val watchDescriptionTextView = findViewById<TextView>(R.id.description_text)
                 watchDescriptionTextView.text = getString(R.string.desc_3)
-                // Ajoutez d'autres modifications en fonction de l'ID du titre
             }
             R.id.watch_4 -> {
-                // Modifiez les détails dans votre mise en page en fonction de l'ID du titre
                 val watchImageView = findViewById<ImageView>(R.id.imageView)
                 watchImageView.setImageResource(R.drawable.amazfit_zoom)
 
@@ -75,14 +72,12 @@ class WatchPage : AppCompatActivity() {
 
                 val watchDescriptionTextView = findViewById<TextView>(R.id.description_text)
                 watchDescriptionTextView.text = getString(R.string.desc_4)
-                // Ajoutez d'autres modifications en fonction de l'ID du titre
             }
-            // Ajoutez d'autres cas en fonction des IDs des titres
         }
     }
 
+    // Go back to MainActivity
     fun onButtonClicked(view: View) {
-        // Appel à la méthode finish() pour fermer l'activité actuelle et revenir à l'activité précédente (MainActivity)
         finish()
     }
 }
